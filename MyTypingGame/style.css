@@ -1,0 +1,359 @@
+body {
+  padding-top: 40px;
+  background-image: url(dhaikei.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  width: 100%;
+  overflow: hidden;
+}
+
+img {
+  width: 60%;
+  height: auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  background: linear-gradient(90deg, #e2e615 0 44%, #da0734 45% 63%, #f8792f 10%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1.0px #000;
+}
+
+h2 {
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 64px;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  h1 {
+    font-size: 44px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+.click {
+  display: flex;
+  margin-top: 80px;
+  justify-content: center;
+  animation-name: tenmetsu;
+  animation-duration: 1.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  color: #ffffff;
+  font-family: 'Anton', 'Kosugi', sans-serif;
+  -webkit-text-stroke: 1.0px #000;
+}
+
+.click .image {
+  width: 8%;
+  /*画像サイズ指定*/
+  margin-top: 3.5%;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+}
+
+@keyframes tenmetsu {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in-text {
+  font-size: 10vw;
+  position: relative;
+  opacity: 0;
+  transform: translateY(100%);
+  animation: fadeInFromBottom 3s forwards;
+}
+
+@keyframes fadeInFromBottom {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#target {
+  font-size: 70px;
+  letter-spacing: .1em;
+  color: #fff;
+  font-family: 'Amatic SC', cursive;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  padding: 0em 15%;
+  margin-left: 5px;
+  margin-right: 5px;
+  outline: 3px solid #e00b27;
+  outline-offset: 5px;
+  background: linear-gradient(-45deg, transparent 0 20px, #000000B3 20px calc(100% - 20px), transparent calc(100% - 20px)),
+    repeating-linear-gradient(-45deg, #e00b27 0 2px, #00000080 2px 6px);
+}
+
+.winner {
+  transform: translate(50%, -50%);
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-family: verdana;
+  margin-top: 10%;
+  margin-right: 100%;
+  font-size: 350%;
+  color: #ff0000;
+  text-shadow: 1px 1px 1px #919191,
+    1px 2px 1px #919191,
+    1px 3px 1px #919191,
+    1px 4px 1px #919191,
+    1px 5px 1px #919191,
+    1px 6px 1px #919191,
+    1px 7px 1px #919191,
+    1px 8px 1px #919191,
+    1px 9px 1px #919191,
+    1px 10px 1px #919191,
+    1px 18px 6px rgba(16, 16, 16, 0.4),
+    1px 22px 10px rgba(16, 16, 16, 0.2),
+    1px 25px 35px rgba(16, 16, 16, 0.2),
+    1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+
+.finish {
+  font-size: 200%;
+  text-align: center;
+  margin-top: -20%;
+}
+
+.btn_26 {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  width: 55%;
+  height: 50px;
+  margin: auto;
+  border-radius: 100vw;
+  color: #fff;
+  background: #27acd9;
+}
+
+.btn_26:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  -webkit-animation: pulse 2s infinite;
+  animation: shad26 1.5s infinite;
+  color: #fff;
+}
+
+.last {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes shad26 {
+  0% {
+    box-shadow: 0 0 0 0 #27acd9;
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgb(39 172 217 / 0%);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgb(39 172 217 / 0%);
+  }
+}
+
+.furiza {
+  position: absolute;
+  transform: scale(-1, 1);
+  width: 32%;
+  height: auto;
+  left: 60%;
+  bottom: 6%;
+}
+
+.goku {
+  width: 28%;
+  height: auto;
+  position: absolute;
+  left: 17%;
+  bottom: 6%;
+}
+
+.kamehameha {
+  width: 180%;
+  height: auto;
+  position: absolute;
+  left: 4%;
+  bottom: -8%;
+}
+
+.bakuhatu {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  left: 10%;
+  bottom: 5%;
+}
+
+.kidan {
+  transform: scale(-1, 1);
+  width: 135%;
+  height: auto;
+  position: absolute;
+  right: 16%;
+  bottom: -1%;
+}
+
+.warai {
+  transform: scale(-1, 1);
+  width: 43%;
+  height: auto;
+  position: absolute;
+  right: 17%;
+  bottom: 5%;
+}
+
+.gokuwin {
+  transform: scale(-1, 1);
+  width: 40%;
+  height: auto;
+  position: absolute;
+  left: -5%;
+  bottom: 1%;
+}
+
+.crear1 {
+  width: 40%;
+  height: auto;
+  position: absolute;
+  left: 70%;
+  top: -5%;
+}
+
+.crear2 {
+  width: 40%;
+  height: auto;
+  position: absolute;
+  left: 17%;
+  top: -5%;
+}
+
+html {
+  font-size: calc(100vw * 9 / 375);
+}
+
+.p1 {
+  position: absolute;
+  right: 17%;
+  bottom: 6%;
+}
+
+.p2 {
+  position: absolute;
+  left: 18%;
+  bottom: 6%;
+}
+
+.hp {
+  position: absolute;
+  left: -60%;
+  top: -50%;
+  font-family: "Nico Moji";
+}
+
+.spgoku {
+  width: 170%;
+  height: auto;
+  margin-left: -3%;
+  opacity: 0;
+  animation-name: sample02;
+  animation-duration: 2.3s;
+  animation-fill-mode: forwards;
+  display: inline-block;
+  z-index: 1100;
+  position: fixed;
+}
+
+.furufuri {
+  width: 170%;
+  height: auto;
+  margin-left: -3%;
+  opacity: 0;
+  animation-name: sample02;
+  animation-duration: 2.3s;
+  animation-fill-mode: forwards;
+  display: inline-block;
+  z-index: 1100;
+  position: fixed;
+}
+
+.timer {
+  margin-top: -20px;
+  -webkit-text-stroke: 1px black;
+  color: white;
+  text-shadow:
+    3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+@keyframes sample02 {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+}
+
+.sample-popup-background {
+  /* 画面全体を暗くする透過背景 */
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.712);
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.d-none {
+  display: none;
+}

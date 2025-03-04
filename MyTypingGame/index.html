@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Game</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet" />
+  <style>
+    .nes-progress {
+      height: 1rem;
+      width: 6rem;
+    }
+
+    .nes-container.is-rounded {
+      padding: 0;
+    }
+
+    .spel-box .nes-btn,
+    .gram-over .nes-btn {
+      padding: 0;
+      margin: 0;
+    }
+
+    .nes-table th::after,
+    .nes-table th::before,
+    .nes-table td::after,
+    .nes-table td::before {
+      background: none;
+    }
+
+    .nes-table th,
+    .nes-table td {
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="nes-table-responsive" id="gage">
+    <table class="nes-table">
+      <tbody>
+        <tr>
+          <td class="p1">
+            <p class="hp">きりょく:</p>
+            <progress class="nes-progress is-success" id="life_goku" value="0" max="100"></progress>
+          </td>
+          <td class="p2">
+            <p class="hp">きりょく:</p>
+            <progress class="nes-progress is-error" id="life_furiza" value="0" max="100"></progress>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="crear1" id="crear1"><img src="crear.gif"></p>
+  <p class="crear2" id="crear2"><img src="crear.gif"></p>
+  <p class="furiza" id="furiza"><img src="furiza.gif"></p>
+  <p class="goku" id="goku"><img src="goku.gif"></p>
+  <div class="sample-popup-background" id="background"></div>
+  <p class="spgoku" id="spgoku"><img src="spgoku.png"></p>
+  <p class="furufuri" id="furufuri"><img src="furufuri.jpg"></p>
+  <p class="kamehameha" id="kamehameha"><img src="kamehameha.gif"></p>
+  <p class="kidan" id="kidan"><img src="kidan.gif"></p>
+  <p class="warai" id="warai"><img src="warai.gif"></p>
+  <p class="bakuhatu" id="bakuhatu"><img src="bakuhatu.gif"></p>
+  <p class="gokuwin" id="gokuwin"><img src="gokuwin.gif"></p>
+  <h1 class="fade-in-text" id="title">DORAGONBALL TYPING</h1>
+  <div class="textarea" id="textarea">
+    <div class="click" id="click">
+      <figure class="image"><img src="tama.png"></figure>
+      <h2>クリックまたはエンターキーでスタート</h2>
+      <figure class="image"><img src="tama.png"></figure>
+    </div>
+  </div>
+  <p id="target"></p>
+  <p class="timer" id="timer"></p>
+  <div class="last">
+    <div class="winner">
+      <p id="message1">goku win!</p>
+      <p id="message2">freeza win!</p>
+    </div>
+    <div class="finish">
+      <p id="result"></p>
+      <p id="count"></p>
+    </div>
+    <button href="" class="btn_26" id="retry" type="button" onclick="location.reload()" style="visibility:hidden">
+      タイトルに戻る
+    </button>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
